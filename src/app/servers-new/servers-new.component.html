@@ -1,0 +1,13 @@
+
+  <br>
+  <button class="btn btn-primary btn-lg" [disabled]="!allowAddServer" (click)='onCreateServer()'>Add Server</button>
+  <h4 [innerText]="allowAddServer"></h4>
+  <h2>{{serverCreationStatus}}</h2>
+
+  <hr>
+  <input type="text" (input)="onUpdateServerName($event)">
+  <h6>{{serverName}}</h6>
+  <app-server></app-server>
+  <hr>
+  <app-server></app-server>
+
